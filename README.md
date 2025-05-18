@@ -1,14 +1,13 @@
 # React + Vite
 
 TODO
-[] React install
-[] npm install styled-components antd @ant-design/icons
-[] make counter : useState, event, handle
-[] GPT API 키 발급, env 설정
-[] GPT API 작성 (system, user, call api)
-[] UserInput 처리
-[] antd, styled-components 소개 및 스타일 컴포넌트
-[] refactoring - loading, icon, error message
+- [ㅇ] React install  
+- [ㅇ] npm install styled-components antd @ant-design/icons
+- [ㅇ] GPT API 키 발급, env 설정
+- [ㅇ] GPT API 작성 (system, user, call api)
+- [] UserInput 처리
+- [] antd, styled-components 소개 및 스타일 컴포넌트
+- [] refactoring - loading, icon, error message
 
 ## INFO
 
