@@ -25,7 +25,7 @@ const ThumbnailImage = styled(Image)`
   margin-bottom: 15px;
 `;
 
-const DiaryDisplay = ({ data, isLoading }) => {
+const DiaryDisplay = ({ data, isLoading, initImg }) => {
   return (
     <DiaryContainer>
       {isLoading && (
@@ -48,7 +48,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
         <CardContent>{data.summary}</CardContent>
       </CardContainer>
 
-      <ThumbnailImage src={data.thumbnail} alt="Thumbnail" />
+      <ThumbnailImage src={data.thumbnail || initImg} alt="Thumbnail" />
 
       <Divider />
       <CardContainer>
@@ -90,9 +90,6 @@ const DiaryDisplay = ({ data, isLoading }) => {
           {data.action_list.map((action, index) => (
             <ActionListItem key={index}>{action}</ActionListItem>
           ))}
-          {/* <ActionListItem>{data.action_list[0]}</ActionListItem>
-          <ActionListItem>{data.action_list[1]}</ActionListItem>
-          <ActionListItem>{data.action_list[2]}</ActionListItem> */}
         </CardContent>
       </CardContainer>
     </DiaryContainer>

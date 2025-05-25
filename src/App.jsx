@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { callGpt } from "./api/gpt";
 import DiaryInput from "./components/DiaryInput.jsx";
-import logo from "./assets/logo.png";
+import logo from "./assets/memoir.png";
 import initImg from "./assets/initImg.jpg";
 import styled from "styled-components";
 import DiaryDisplay from "./components/DiaryDisplay.jsx";
@@ -38,16 +38,15 @@ function App() {
     <>
       <AppConatiner>
         {contextHolder}
-        <AppTitle>
-          심리상담사 GPT, AI 회고록 <img width={"100px"} src={logo}></img>
-        </AppTitle>
+        <LogoImg src={logo} alt="logo" />
+        <AppTitle>심리상담사 GPT, AI 회고록</AppTitle>
         <DiaryInput
           messageApi={messageApi}
           isLoading={isLoading}
           onSubmit={handleSubmit}
         />
         <div id="capture">
-          <DiaryDisplay isLoading={isLoading} data={data} />
+          <DiaryDisplay isLoading={isLoading} data={data} initImg={initImg} />
         </div>
       </AppConatiner>
     </>
@@ -71,4 +70,10 @@ const AppTitle = styled.div`
   font-size: 35px;
   text-align: center;
   font-family: "Noto Serif KR";
+`;
+
+const LogoImg = styled.img`
+  width: 100px;
+  align-self: center; /* flex 아이템만 중앙으로 */
+  margin-bottom: 16px; /* 원하는 간격 조절 */
 `;
