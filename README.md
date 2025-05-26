@@ -1,13 +1,14 @@
-# React + Vite
+# 구현 의의
+gpt api를 이용해서 간단하게라도 웹사이트 구현 해보고자 간단하게 구현 해서 만든 토이 프로젝트.
 
 TODO
 - [ㅇ] React install  
 - [ㅇ] npm install styled-components antd @ant-design/icons
 - [ㅇ] GPT API 키 발급, env 설정
 - [ㅇ] GPT API 작성 (system, user, call api)
-- [] UserInput 처리
-- [] antd, styled-components 소개 및 스타일 컴포넌트
-- [] refactoring - loading, icon, error message
+- [ㅇ] UserInput 처리
+- [ㅇ] antd, styled-components 소개 및 스타일 컴포넌트
+- [ㅇ] refactoring - loading, icon, error message
 
 ## INFO
 
@@ -34,3 +35,8 @@ emotional_result: here is [evaluates],
 analysis: here is [Psychological analysis],
 action_list: here is [3 action tips],
 }
+
+## 구현 완료 모습
+
+![image](https://github.com/user-attachments/assets/06fe5a09-d1f4-475a-abb9-d821d7eb53a1)
+
